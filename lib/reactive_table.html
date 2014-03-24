@@ -34,7 +34,7 @@
         {{#each sortedRows}}
             <tr>
             {{#each ../fields}}
-                <td class="{{key}}">{{getField ../this}}</td>
+            <td id="{{../_id._str}}" class="editable" data-type="text" data-emptytext="Empty" class="{{key}}">{{getField ../this}}</td>
             {{/each}}
             </tr>
         {{/each}}
